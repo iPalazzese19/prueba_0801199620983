@@ -1,0 +1,16 @@
+<form action="/mensaje" method="post">
+  <label for="txtMensaje">Mensaje: </label>
+  <input type="text" id="txtMensaje" name="txtMensaje" value="{{txtMensaje}}" />
+    <br />
+    <input type="submit" value="Enviar" id="btnSubmit" name="btnSubmit"/>
+</form>
+<div>
+  <ul>
+    {{#each msg}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+  </ul>
+
+</div>
